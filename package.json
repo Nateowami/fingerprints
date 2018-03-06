@@ -1,5 +1,5 @@
 {
-  "name": "fingerhub",
+  "name": "fingerprints",
   "version": "0.1.0",
   "description": "Find authoritative key fingerprints for a host",
   "main": "script.js",
