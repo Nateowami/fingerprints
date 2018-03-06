@@ -1,0 +1,42 @@
+
+body, a {
+  color: #444;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.wrapper {
+  text-align: center;
+  max-width: 500pt;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.search {
+  display: flex;
+  width: 100%;
+}
+
+input {
+  flex: 1;
+}
+
+input, button {
+  font-size: 1.5rem;
+}
+
+.results {
+  font-family: sans-serif;
+}
+
+footer {
+  p {
+    font-size: 1rem;
+  }
+}

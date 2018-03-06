@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Fingerprints
+    link(rel='stylesheet' href='/style.css')
+  body
+
+    h1 Fingerprints
+    .wrapper
+      p Search for a host (e.g. github.com) to find its key fingerprint.
+      p Press enter to go.
+
+      form.search
+        input(type='text' autofocus)
+        button(type='submit') Go
+
+      div.results
+
+      footer
+        p Fingerprints is a directory of authoritative sources for host key
+          | fingerprints. It doesn't require your trust, it only helps you find
+          | the fingerprints from the authoritative source for the given
+          | fingerprint.
+
+        p Can't find what you're looking for? Open a <a href='https://github.com/Nateowami/fingerprints/pulls'>pull request</a> or <a href='https://github.com/Nateowami/fingerprints/issues/new'>open an issue.</a>
+
+    script(src='/script.js')
