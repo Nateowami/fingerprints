@@ -50,7 +50,7 @@ function showResults(results) {
 
 const keyData = {
   'github.com': 'https://help.github.com/articles/github-s-ssh-key-fingerprints/',
-  'gitlab.com': 'https://about.gitlab.com/gitlab-com/settings/#ssh-host-keys-fingerprints',
+  'gitlab.com': 'https://docs.gitlab.com/ee/user/gitlab_com/#ssh-host-keys-fingerprints',
   'bitbucket.com': 'https://confluence.atlassian.com/bitbucket/use-the-ssh-protocol-with-bitbucket-cloud-221449711.html#UsetheSSHprotocolwithBitbucketCloud-KnownhostorBitbucket%27spublickeyfingerprints'
 }
 
