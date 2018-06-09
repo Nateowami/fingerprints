@@ -52,9 +52,11 @@ function showResults(results) {
 }
 
 var keyData = {
+  'bitbucket.com': 'https://confluence.atlassian.com/bitbucket/ssh-keys-935365775.html',
+  'gist.github.com': 'https://help.github.com/articles/github-s-ssh-key-fingerprints/',
   'github.com': 'https://help.github.com/articles/github-s-ssh-key-fingerprints/',
   'gitlab.com': 'https://docs.gitlab.com/ee/user/gitlab_com/#ssh-host-keys-fingerprints',
-  'bitbucket.com': 'https://confluence.atlassian.com/bitbucket/use-the-ssh-protocol-with-bitbucket-cloud-221449711.html#UsetheSSHprotocolwithBitbucketCloud-KnownhostorBitbucket%27spublickeyfingerprints'
+  'sourceforge.net': 'https://sourceforge.net/p/forge/documentation/SSH%20Key%20Fingerprints/'
 };
 
 search();
