@@ -6,18 +6,18 @@ document.querySelector('button').addEventListener('click', () => {
   search(true)
 })
 
-document.querySelector('input[type="text"]').addEventListener('input', search)
+document.querySelector('input[type="text"]').addEventListener('input', () => search())
 
 /**
  * @param go {bool} - If true, page will navigate to the first result if there
  * exactly one.
  */
 function search (go) {
-  const query = document.querySelector('input[type="text"]').value
+  const query = document.querySelector('input[type="text"]').value.toLowerCase()
 
-  const results = Object.keys(keyData).filter(host => host.includes(query.toLowerCase()))
+  const results = Object.keys(keyData).filter(host => host.includes(query)).sort((a, b) => a.indexOf(query) - b.indexOf(query))
 
-  if(go === true && results.length === 1) {
+  if (go === true) {
     window.location.href = keyData[results[0]]
   }
   else showResults(results)
@@ -49,10 +49,10 @@ function showResults(results) {
 }
 
 const keyData = {
-  'bitbucket.com': 'https://confluence.atlassian.com/bitbucket/ssh-keys-935365775.html',
-  'gist.github.com': 'https://help.github.com/articles/github-s-ssh-key-fingerprints/',
   'github.com': 'https://help.github.com/articles/github-s-ssh-key-fingerprints/',
   'gitlab.com': 'https://docs.gitlab.com/ee/user/gitlab_com/#ssh-host-keys-fingerprints',
+  'gist.github.com': 'https://help.github.com/articles/github-s-ssh-key-fingerprints/',
+  'bitbucket.com': 'https://confluence.atlassian.com/bitbucket/ssh-keys-935365775.html',
   'sourceforge.net': 'https://sourceforge.net/p/forge/documentation/SSH%20Key%20Fingerprints/'
 }
 
