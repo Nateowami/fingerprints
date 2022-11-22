@@ -28,7 +28,7 @@
     "pug-cli": "^1.0.0-alpha6"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.8"
+    "browser-sync": "^2.27.10"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
